@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Formulir Pendaftaran</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  font-family:Arial;
+  background:#f3f3f3;
+}
+.box{
+  background:#fff;
+  max-width:400px;
+  margin:30px auto;
+  padding:20px;
+  border-radius:8px;
+}
+input,button{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+}
+button{
+  background:#007bff;
+  color:white;
+  border:none;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+<h3>Formulir Pendaftaran</h3>
+
+<form action="https://script.google.com/macros/s/AKfycbxHcTQdjRQILIVclJtRLzQS8vcyxshIErHQxAc76GhQzoB4HmJfhI5nxiFeTwJl5tmV/exec" method="POST" enctype="multipart/form-data">
+<input type="text" name="nama" placeholder="Nama Lengkap" required>
+<input type="text" name="nik" placeholder="NIK" required>
+<input type="email" name="email" placeholder="Email" required>
+
+<label>Foto Diri</label>
+<input type="file" name="foto" required>
+
+<label>File KK</label>
+<input type="file" name="kk" required>
+
+<button type="submit">Kirim</button>
+</form>
+</div>
+</body>
+</html>
